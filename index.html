@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WotLK Ultimate Portal | Цитадель Знаний</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="ice-sidebar-left"></div>
+<div class="ice-sidebar-right"></div>
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">❄</div><div class="snowflake">❅</div><div class="snowflake">❆</div>
+    <div class="snowflake">❄</div><div class="snowflake">❅</div><div class="snowflake">❆</div>
+    <div class="snowflake">❄</div><div class="snowflake">❅</div><div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+</div>
+
+<header>
+    <div class="header-inner">
+        <div class="logo-area">
+            <img src="https://img.icons8.com/win10/1200/world-of-warcraft.jpg" alt="WoW">
+            <h1>Frostmourne <span class="gold">Guides</span></h1>
+        </div>
+        <div class="server-status">
+            <span class="dot"></span> Server Online: <span class="gold">3.3.5a</span>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="filter-section">
+        <button class="f-btn active" onclick="filter('all', this)">Все гайды</button>
+        <button class="f-btn" onclick="filter('tank', this)">🛡️ Танки</button>
+        <button class="f-btn" onclick="filter('heal', this)">🌿 Хилы</button>
+        <button class="f-btn" onclick="filter('dps', this)">⚔️ ДД</button>
+    </div>
+
+    <section class="section">
+        <h2 class="title-decor">Гайды по Классам</h2>
+        <div class="grid" id="mainGrid">
+            <a href="https://wow-sirus.com/gaydy/wotlk/paladin/hli-pal-335-pve-gayd.html" target="_blank" class="card heal"><div class="badge">HEAL</div><img src="https://wow.zamimg.com/images/wow/icons/large/spell_holy_holybolt.jpg"><span>Хпал (Свет)</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/prist/dc-prist-335-gayd.html" target="_blank" class="card heal"><div class="badge">HEAL</div><img src="https://wow.zamimg.com/images/wow/icons/large/spell_holy_powerwordshield.jpg"><span>ДЦ Прист</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/shaman/restor-shaman-335-pve-gayd.html" target="_blank" class="card heal"><div class="badge">HEAL</div><img src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_magicimmunity.jpg"><span>Рестор Шам</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/druid/restor-druid-335-pve-gayd.html" target="_blank" class="card heal"><div class="badge">HEAL</div><img src="https://wow.zamimg.com/images/wow/icons/large/spell_nature_healingtouch.jpg"><span>Рдру (Дерево)</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/prist/holy-prist-335-pve-gayd.html" target="_blank" class="card heal"><div class="badge">HEAL</div><img src="https://wow.zamimg.com/images/wow/icons/large/spell_holy_guardianspirit.jpg"><span>Холи Прист</span></a>
+            
+            <a href="https://wow-sirus.com/gaydy/wotlk/voin/prot-var-335-pve-gayd-zaschita.html" target="_blank" class="card tank"><div class="badge">TANK</div><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg"><span>Прот Вар</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/dk/blad-dk-335-pve-gayd-krov.html" target="_blank" class="card tank"><div class="badge">TANK</div><img src="https://wow.zamimg.com/images/wow/icons/large/spell_deathknight_classicon.jpg"><span>Блад ДК</span></a>
+            <a href="https://forum.sirus.su/threads/gajd-na-pve-protpaladina-3-3-5a.12345/" target="_blank" class="card tank"><div class="badge">TANK</div><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg"><span>Ппал</span></a>
+            
+            <a href="https://wow-sirus.com/gaydy/wotlk/mag/arkan-mag-335-pve-gayd-taynaya-magiya.html" target="_blank" class="card dps"><div class="badge">DPS</div><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg"><span>Аркан Маг</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/ohotnik/mm-hant-3-3-5-pve-gayd-strelba.html" target="_blank" class="card dps"><div class="badge">DPS</div><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg"><span>ММ Хант</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/razboynik/kombat-roga-3-3-5-pve-gayd-boy.html" target="_blank" class="card dps"><div class="badge">DPS</div><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg"><span>Комбат Рога</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/demon-lok-335-pve-gayd-chernoknizhnik.html" target="_blank" class="card dps"><div class="badge">DPS</div><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg"><span>Демон Лок</span></a>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="title-decor">Мастерство Профессий</h2>
+        <div class="grid">
+            <a href="https://wow-sirus.com/gaydy/wotlk/professii/inzhenernoe-delo-1-450.html" target="_blank" class="card prof"><img src="https://wow.zamimg.com/images/wow/icons/large/trade_engineering.jpg"><span>Инженерия</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/professii/yuvelirnoe-delo-1-450.html" target="_blank" class="card prof"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_gem_01.jpg"><span>Ювелирка</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/professii/kuznechnoe-delo-1-450.html" target="_blank" class="card prof"><img src="https://wow.zamimg.com/images/wow/icons/large/trade_blacksmithing.jpg"><span>Кузнечка</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/professii/alhimija-1-450.html" target="_blank" class="card prof"><img src="https://wow.zamimg.com/images/wow/icons/large/trade_alchemy.jpg"><span>Алхимия</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/professii/portnyazhnoe-delo-1-450.html" target="_blank" class="card prof"><img src="https://wow.zamimg.com/images/wow/icons/large/trade_tailoring.jpg"><span>Портняжка</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/professii/nalozhenie-char-1-450.html" target="_blank" class="card prof"><img src="https://wow.zamimg.com/images/wow/icons/large/trade_engraving.jpg"><span>Инчант</span></a>
+            <a href="https://wow-sirus.com/gaydy/wotlk/professii/kozhevnoe-delo-1-450.html" target="_blank" class="card prof"><img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_armorkit_17.jpg"><span>Кожевка</span></a>
+        </div>
+    </section>
+
+    <div class="extra-content">
+        <div class="addon-box">
+            <h3>Полезные Аддоны</h3>
+            <ul>
+                <li>🔹 Deadly Boss Mods (DBM)</li>
+                <li>🔹 Recount / Skada</li>
+                <li>🔹 GearScore Lite</li>
+                <li>🔹 WeakAuras 2</li>
+            </ul>
+        </div>
+        <div class="discord-promo">
+            <h3>Присоединяйся к нам</h3>
+            <p>Общение и поиск напарников</p>
+            <a href="https://discord.gg/sirus" target="_blank" class="discord-link">
+                <button class="discord-btn">Войти в Discord</button>
+            </a>
+        </div>
+    </div>
+</main>
+
+<script>
+    function filter(role, btn) {
+        document.querySelectorAll('.f-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelectorAll('#mainGrid .card').forEach(card => {
+            if (role === 'all' || card.classList.contains(role)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
+</body>
+</html>
+<section class="section">
+        <h2 class="title-decor">Шпаргалки по Боссам ЦЛК</h2>
+        <div class="boss-grid">
+            <div class="boss-card">
+                <img src="https://wow.zamimg.com/images/wow/icons/large/inv_helmet_96.jpg" alt="Ребрад">
+                <div class="boss-info">
+                    <h4>Лорд Ребрад</h4>
+                    <p>⚔️ Выходим из огня. Бьем шипы сразу. Танки стоят вместе.</p>
+                </div>
+            </div>
+            <div class="boss-card">
+                <img src="https://wow.zamimg.com/images/wow/icons/large/inv_misc_bone_09.jpg" alt="Саурфанг">
+                <div class="boss-info">
+                    <h4>Саурфанг</h4>
+                    <p>⚔️ Заливаем чудовищ. Хилы держат метки. Копим РП.</p>
+                </div>
+            </div>
+            <div class="boss-card">
+                <img src="https://wow.zamimg.com/images/wow/icons/large/inv_potion_14.jpg" alt="Проф">
+                <div class="boss-info">
+                    <h4>Проф. Мерзоцид</h4>
+                    <p>⚔️ Пьем лужи. Бьем слизней (зеленый/оранжевый). Не тупим.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<div id="frost-trail"></div>
+<section class="section journey-section">
+    <h2 class="title-decor">Путь Новичка: От 80-го до ЦЛК</h2>
+    <div class="journey-container">
+        
+        <div class="journey-step step-forge">
+            <div class="step-icon">
+                <img src="https://wow.zamimg.com/images/wow/icons/large/trade_blacksmithing.jpg" alt="Крафт">
+            </div>
+            <div class="step-content">
+                <div class="step-header">
+                    <span class="step-badge">Этап I</span>
+                    <h3>Сбор стартового снарежения</h3>
+                </div>
+                <p>Не иди в инсты голым! Твой первый шаг — купить крафтовый шмот (200-219 илвл) на аукционе или у кузнецов. Это даст ГС для ПП.</p>
+                <div class="step-actions">
+                    <a href="https://golderi.net/wowfree/items/" target="_blank" class="learn-more-btn">
+                        <img src="https://avatars.mds.yandex.net/i?id=6c427e044e97eaa0bfa14763b634a7fd_sr-9198383-images-thumbs&n=13"> Узнать про Крафт
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="journey-step step-ice">
+            <div class="step-icon">
+                <img src="https://wow.zamimg.com/images/wow/icons/large/spell_holy_summonlightwell.jpg" alt="Триумф">
+            </div>
+            <div class="step-content">
+                <div class="step-header">
+                    <span class="step-badge">Этап II</span>
+                    <h3>Фарм Эмблем Триумфа</h3>
+                </div>
+                <p>Регай случайные Подземелья Lich King (героич.). Копи эмблемы Триумфа на Т9 сет и аксессуары 245 илвл у вендоров в Даларане.</p>
+                <div class="step-actions">
+                    <a href="https://forum.wowcircle.com/showthread.php?t=240503    " target="_blank" class="learn-more-btn blue">
+                        <img src="https://img.icons8.com/color/48/sword.png"> Гайд по Фарму
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="journey-step step-magic">
+            <div class="step-icon">
+                <img src="https://rp-wow.ru/upload/021/u2168/c7/8f/unnamed.png" alt="Чары">
+            </div>
+            <div class="step-content">
+                <div class="step-header">
+                    <span class="step-badge">Этап III</span>
+                    <h3>Усиление Экипировки</h3>
+                </div>
+                <p>Без чарок и сокетов в рейд не возьмут. Качай репутацию с Сынами Ходира (плечи) и Кирин-Тором (голова) ради лучших чар.</p>
+                <div class="step-actions">
+                    <a href="https://vk.com/wall-233052284_16" target="_blank" class="learn-more-btn gold">
+                        <img src="https://i.ytimg.com/vi/yRv-K3HBdPU/hqdefault.jpg"> Чарки и Репа
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="journey-step step-fire current-step">
+            <div class="step-icon">
+                <img src="https://wow.zamimg.com/images/wow/icons/large/inv_helmet_151.jpg" alt="ИК">
+            </div>
+            <div class="step-content">
+                <div class="step-header">
+                    <span class="step-badge">Этап IV</span>
+                    <h3>Первые Рейды (Ик/Оня)</h3>
+                </div>
+                <p>При достижении ~4к-4.5к ГС собирай пати в Испытание Крестоносца (10/25 об) и Логово Ониксии. Это легкий лут 232-245 илвл.</p>
+                <div class="step-actions">
+                    <a href="https://www.wowhead.com/wotlk/ru/zone=4722/" target="_blank" class="learn-more-btn red">
+                        <img src="https://img.icons8.com/color/48/dragon.png"> Тактики Рейдов
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    
+    
